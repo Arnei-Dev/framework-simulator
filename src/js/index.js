@@ -12,8 +12,10 @@ elemImageRiver.src = imageRiver
 const elemImageNotebook = new Image()
 elemImageNotebook.src = imageNotebook
 
+/*
 document.querySelector('#river')
 .appendChild(elemImageRiver)
 
 document.querySelector('#notebook')
 .appendChild(elemImageNotebook)
+*/

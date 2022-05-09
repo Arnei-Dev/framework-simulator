@@ -8,60 +8,97 @@
 </head>
 <body>
     <div id="root">
-        <h1>Flexbox</h1>
-
-        <h2>Space Around</h2>
-        <div class="box__container box__container--around">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            
-        </div>
-
-        <h2>Space Between</h2>
-        <div class="box__container box__container--between">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            
-        </div>
-
-        <h2>Space evenly</h2>
-        <div class="box__container box__container--evenly">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            
-        </div>
-
-        <h2>Center</h2>
-        <div class="box__container box__container--center">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            <div class="box">Box 4</div>
-            <div class="box">Box 5</div>
-            
-        </div>
-
-        <h1>Grid</h1>
-        <div class="box__container box__container--grid">
-            <div class="box">Box 1</div>
-            <div class="box">Box 2</div>
-            <div class="box">Box 3</div>
-            <div class="box">Box 4</div>
-            <div class="box">Box 5</div>
-            <div class="box">Box 6</div>
-            <div class="box">Box 7</div>
-            <div class="box">Box 8</div>
-            <div class="box">Box 9</div>
-        </div>
-
-        <h2>Imagem</h2>
-        <div class="box__container box__container--image">
-            <div class="box" id="river"></div>
-            <div class="box" id="notebook"></div>
-        </div>
+       <header>
+           <div class="container">
+               <h2>Logo</h2>
+               <nav>
+                   <a href="#sobre">Sobre</a>
+                   <a href="#produto">Produtos</a>
+                   <a href="#contato">Contato</a>
+               </nav>
+           </div>
+       </header>
+       <section id="sobre">
+           <div class="container">
+               <aside>
+                   <div id="localizacao"></div>
+               </aside>
+               <article>
+                   <h1>Sobre nós</h1>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum amet libero obcaecati, quod ratione nam cupiditate optio iste dolore nemo doloribus vitae, id quidem. Quo ipsa dolorem soluta! Nobis, nulla?</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odit aperiam vitae natus inventore. Facere consequuntur nihil officiis laborum adipisci itaque perferendis nam, illo maxime dolorum libero accusamus debitis non!</p>
+               </article>
+           </div>
+       </section>
+       <section id="produto">
+           <div class="container">
+               <h1>Catálogo</h1>
+               <div class="vitrine">
+                   <div class="vitrine__item">
+                       <h3 class="vitrine__produto">Produto 1</h3>
+                       <!--<img src="" alt="" class="vitrine__image">-->
+                       <div class="vitrine__image"></div>
+                       <div class="image"></div>
+                       <p class="vitrine__desc"></p>
+                       <a href="" class="vitrine__button">Ver detalhes</a>
+                   </div>
+                   <div class="vitrine__item">
+                       <h3 class="vitrine__produto">Produto 2</h3>
+                       <!--<img src="" alt="" class="vitrine__image">-->
+                       <div class="vitrine__image"></div>
+                       <p class="vitrine__desc"></p>
+                       <a href="" class="vitrine__button">Ver detalhes</a>
+                   </div>
+                   <div class="vitrine__item">
+                       <h3 class="vitrine__produto">Produto 3</h3>
+                       <!--<img src="" alt="" class="vitrine__image">-->
+                       <div class="vitrine__image"></div>
+                       <div class="image"></div>
+                       <p class="vitrine__desc"></p>
+                       <a href="" class="vitrine__button">Ver detalhes</a>
+                   </div>
+                   <div class="vitrine__item">
+                       <h3 class="vitrine__produto">Produto 4</h3>
+                       <!--<img src="" alt="" class="vitrine__image">-->
+                       <div class="vitrine__image"></div>
+                       <div class="image"></div>
+                       <p class="vitrine__desc"></p>
+                       <a href="" class="vitrine__button">Ver detalhes</a>
+                   </div>
+                   <div class="vitrine__item">
+                       <h3 class="vitrine__produto">Produto 5</h3>
+                       <!--<img src="" alt="" class="vitrine__image">-->
+                       <div class="vitrine__image"></div>
+                       <div class="image"></div>
+                       <p class="vitrine__desc"></p>
+                       <a href="" class="vitrine__button">Ver detalhes</a>
+                   </div>
+                   <div class="vitrine__item">
+                       <h3 class="vitrine__produto">Produto 6</h3>
+                       <!--<img src="" alt="" class="vitrine__image">-->
+                       <div class="vitrine__image"></div>
+                       <div class="image"></div>
+                       <p class="vitrine__desc"></p>
+                       <a href="" class="vitrine__button">Ver detalhes</a>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <section id="contato">
+           <div class="container">
+               <h1>Contato</h1>
+               <form class="contato">
+                   <input type="text" placeholder="Nome" class="contato__input">
+                   <input type="text" placeholder="E-mail" class="contato__input">
+                   <button class="contato__button">Enviar</button>
+               </form>
+           </div>
+       </section>
+       <footer>
+           <div class="container">
+               <p>Loja SDias &copy; Todos os direitos reservados</p> <br> <small>Developed by Mário Dias</small>
+           </div>
+       </footer>
     </div>
 </body>
 </html>

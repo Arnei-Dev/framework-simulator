@@ -1,15 +1,17 @@
-$color-font: #fff;
-$color-bg-default: #33f;
+$color-font: #45f;
+$color-bg-default: #a4f;
 $color-bg-boxe: #fd3;
 $font-default: Arial, Helvetica, sans-serif;
+$font-size-default: 1.6rem;
 
 html {
     font-size: 62.5%;
 }
 
 body {
-    background: url('../assets/background.jpg') no-repeat top center;
-    background-size: cover;
+   // background: url('../assets/background.jpg') no-repeat top center;
+   // background-size: cover;
+    background-color: $color-bg-default;
     font-family: $font-default;
     margin: 0;
 }
@@ -25,111 +27,26 @@ h2 {
     color: $color-font;
 }
 
-.container {
+header,
+section,
+footer {
     display: block;
-    max-width: 1200px;
+    float: left;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-flow: column;
     margin: 0 auto;
-    
-    img {
-        width: 100%;
-        height: auto;
-    }
+    max-width: 90vw;
 }
 
-.box__container {
-    background-color: $color-bg-boxe;
-    border-radius: 1rem;
-    display: flex;
-    padding: 1rem;
-  // margin-top: 5rem;
-    height: auto;
-    
-    &--around {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;//eixo x
-        align-items: stretch;//eixo y
-    }
-
-    &--between {
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    &--evenly {
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: flex-start;
-    }
-
-    &--center {
-        flex-direction: row;
-        flex-wrap:nowrap;
-        justify-content: center;
-    }
-
-    &--grid {
-        display: grid;
-       // grid-template-columns: 120px 120px 120px;
-        grid-template-columns: repeat(3, 1fr);
-        //grid-template-rows: 1fr 2fr 1fr;
-       // grid-template-columns: 1fr 2fr 1fr;
-        gap: 10px;
-    }
-
-    &--image {
-        
-        .box {
-            border: none;
-            overflow: hidden;
-            margin: .5rem;
-            width: auto;
-            img {
-                width: 20rem;
-                height: 20rem;
-                object-fit: cover;//image preenche o container
-               // object-fit: contain;//image renderizada no container
-               //object-position: 20% 90%;//Movimenta posição img eixo X(20%), eixo Y (90%)
-            }
-        }
-    }
+#sobre {
+    background-color: #fff;
 }
 
-.box {
-    background-color: $color-bg-default;
-    border-radius: 1rem;
-    border: 2px solid $color-font;
-    color: #fff;
-    display: flex;
-   // text-align: center;
-    align-items: center;
-    justify-content: center;
-    //margin: 1rem auto;
-    position: relative;
-    min-width: 10rem;
-    min-height: 10rem;
-    //width: 100%;
-
-    animation-name: slideIn;
-    animation-duration: 2s;
-    animation-iteration-count: 2;//Repeat 2x
-    animation-direction: alternate;
+#produtos {
+   
 }
 
-@keyframes slideIn {
-    from {
-        left: -999px;
-        opacity: .1;
-       // height: 0;
-      // background-color: red;
-    }
-    to {
-        left: 0;
-        opacity: 1;
-      //height: fit-content; Aultura se adequa conforme o tamanho do conteúdo!
-      //background-color: #fff;
-    }
-}
+@import 'vitrine'
